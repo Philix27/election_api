@@ -8,18 +8,7 @@ const notFound = require("./middleware/not-found");
 const errorHandlerMiddleware = require("./middleware/error-handler");
 
 //? Routes
-const mcq = require("./routes/mcq");
-const mcq_pep = require("./routes/mcq_pep");
-const article = require("./routes/article");
-const articleCategory = require("./routes/articles_category");
-const mcqCategory = require("./routes/mcq_category");
-const user = require("./routes/user");
-const pepNote = require("./routes/pepNote");
-const pepMcq = require("./routes/pepMcq");
-const news = require("./routes/news");
-const pepMcqDemo = require("./routes/pepMcqDemo");
-const brandDrugs = require("./routes/brand");
-const genericDrugs = require("./routes/generic");
+
 // * APC
 const member = require("./routes/member");
 const sponsor = require("./routes/sponsor");
@@ -73,18 +62,7 @@ app.use(function (req, res, next) {
 });
 
 //? Routes
-app.use("/api/v1/mcq", mcq);
-app.use("/api/v1/mcq_pep", mcq_pep);
-app.use("/api/v1/articles", article);
-app.use("/api/v1/articles_category", articleCategory);
-app.use("/api/v1/mcq_category", mcqCategory);
-app.use("/api/v1/user", user);
-app.use("/api/v1/pep_note", pepNote);
-app.use("/api/v1/pep_mcq", pepMcq);
-app.use("/api/v1/pep_mcq_demo", pepMcqDemo);
-app.use("/api/v1/blogs", news);
-app.use("/api/v1/brand_drugs", brandDrugs);
-app.use("/api/v1/generic_drugs", genericDrugs);
+
 //! APC
 app.use("/api/v1/agent", agent);
 app.use("/api/v1/agents_by_state", agentByState);
