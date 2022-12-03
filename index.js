@@ -45,7 +45,7 @@ const start = async () => {
 start();
 
 app.get("/", (req, res) => {
-  res.send("Reached Rxedu API");
+  res.send("Reached Election Data API");
 });
 //? Middleware
 app.use(express.json());
@@ -74,7 +74,8 @@ app.use("/api/v1/sponsor", sponsor);
 app.use("/api/v1/sponsor_code", agentBySponsorCode);
 app.use("/api/v1/sponsor_by_ref", sponsorByRef);
 app.use("/api/v1/agent_sort", agentSort);
-app.use("/api/v1/ ", agentsAll);
+
+// app.use("/api/v1/ ", agentsAll);
 // app.use("/api/v1/mailer", mailer);
 
 //? Error Managers
