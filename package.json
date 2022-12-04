@@ -1,5 +1,5 @@
 {
-  "name": "Election Data",
+  "name": "election_api",
   "version": "1.0.0",
   "description": "Agents Inventory Management System",
   "main": "index.js",

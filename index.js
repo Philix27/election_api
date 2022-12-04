@@ -29,7 +29,7 @@ const agentsAll = require("./routes/agentAll");
 //! Run npm i
 //! Delete Comment
 
-const port = process.env.PORT || 3007;
+const port = process.env.PORT || 8080;
 const start = async () => {
   try {
     await connectDB(process.env.MONGO_URI);
@@ -74,8 +74,7 @@ app.use("/api/v1/sponsor", sponsor);
 app.use("/api/v1/sponsor_code", agentBySponsorCode);
 app.use("/api/v1/sponsor_by_ref", sponsorByRef);
 app.use("/api/v1/agent_sort", agentSort);
-
-// app.use("/api/v1/ ", agentsAll);
+app.use("/api/v1/agent_all ", agentsAll);
 // app.use("/api/v1/mailer", mailer);
 
 //? Error Managers

@@ -1,0 +1,16 @@
+FROM node:14-alpine3.15
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+ENV NODE_ENV production
+EXPOSE 3001
+CMD ["npm", "start"]
+# run docker file to build image
+#  docker build -t election-data/elction-api:latest .
+
+
+
+node_modules
+Dockerfile
+.git
